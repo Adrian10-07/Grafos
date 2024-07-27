@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENCIA ECO VIAJES</title>
+    <link rel="stylesheet" href="Index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>        
+    <header class="main_cabecera">
+        <h1>ECO VIAJES</h1>    
+    </header>
+    <main>
+        <div class="main_contenedores">
+            <h4>Registrar una ciudad</h4>
+            <input type="text" placeholder="Ubicación nueva" id="main_div_inputUbicacion">
+            <button id="main_div_buttonAgregarUbicacion">Agregar</button>
+            <h4>Agregar la distancia entre ciudades</h4>
+            <input type="number" placeholder="Distancia en KM" id="getWeight">
+            <input type="text" placeholder="Ciudad de Inicio" id="startPoint">
+            <input type="text" placeholder="Ciudad de Destino" id="endPoint">
+            <button id="main_div_buttonAgregarCamino">Agregar</button>
+        </div>
+        <div class="main_contenedores">
+            <h2>Ciudades Registradas</h2>
+            <ul id="main_div_resultados"></ul>
+        </div>
+        <div class="main_contenedores">
+            <h4> Encuentra la Ruta más corta</h4>
+            <input type="text" placeholder="Ubicacion Inicial" id="startDijkstra">
+            <input type="text" placeholder="Ubicacion final" id="endDijkstra">
+            <button id="main_div_buttonEncontrarCamino">Buscar</button>
+            <lu id="main_contenedores_resultadoDijkstra"></lu>
+        </div>
+    </main>
+    <script type="module" src="./src/controllers/Script.mjs"></script>
+</body>
+</html>
