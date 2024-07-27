@@ -1,4 +1,4 @@
-import Graph from "../Models/Graph.mjs";
+import Graph from "../Models/Graph/Graph.mjs";
 
 let g = new Graph(8);
 g.addVertices("A", "B", "C", "D", "E", "F", "G");
