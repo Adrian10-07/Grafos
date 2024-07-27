@@ -1,4 +1,4 @@
-import ListaEnlazada from "../ListaEnlazada.mjs";
+import ListaEnlazada from "../ListaEnlazada/ListaEnlazada.mjs";
 
 export default class Graph {
     #listaAdyacencia = [];
